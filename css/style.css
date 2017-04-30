@@ -138,9 +138,11 @@ body,
 }
 body {
   font-family: "微软雅黑", 'Microsoft JhengHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
-  font-size: 16px;
-  background: #3f3f3f;
-  color: #999;
+  font-size: 14px;
+  background: rgba(225,225,225,0.8);
+  color: #24292e;
+  max-width: 1366px;
+  margin: 0 auto;
   -webkit-overflow-scrolling: touch;
 }
 ::selection {
@@ -153,6 +155,9 @@ h4,
 h5,
 h6 {
   font-family: Times, Georgia, serif, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+}
+a:hover {
+  text-decoration: underline;
 }
 h1,
 h2,
@@ -618,10 +623,13 @@ a {
   width: 100%;
 }
 #header a {
-  color: #fff;
+  color: #add8e6;
 }
 #header a:hover {
   color: #4d4d4d;
+}
+#header .header-author a {
+  color: #f69;
 }
 #header .profilepic {
   text-align: center;
@@ -2310,11 +2318,11 @@ color
 }
 #busuanzi_value_site_uv,
 #busuanzi_value_page_pv {
-  color: #fff;
+  color: #000;
 }
 #busuanzi_value_site_uv:hover,
 #busuanzi_value_page_pv:hover {
-  color: #999;
+  color: #f00;
 }
 .duoshuo {
   padding: 0 40px;
@@ -2407,14 +2415,15 @@ color
 }
 .archives .archive-article-title {
   font-size: 16px;
-  color: #999;
+  color: #808080;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -ms-transition: color 0.3s;
   transition: color 0.3s;
 }
 .archives .archive-article-title:hover {
-  color: #fff;
+  color: #009fdf;
+  text-decoration: underline;
 }
 .archives .archive-article-title span {
   display: block;
@@ -2567,13 +2576,13 @@ color
   color: #c8c8c8;
 }
 .article-title {
-  color: #999;
+  color: #009a61;
   margin-left: 0px;
   font-weight: initial;
   line-height: 35px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 26px;
+  font-size: 21px;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -2583,7 +2592,8 @@ color
   transition: color 0.3s;
 }
 .article-title:hover {
-  color: #fff;
+  opacity: 0.5;
+  text-decoration: underline;
 }
 #more {
   display: none;
@@ -2626,7 +2636,7 @@ color
   padding: 1px 3px;
   margin: 0 3px;
   color: #999;
-  background: #002b36;
+  background: #f3f4f4;
   border: 1px dashed #ccc;
   border-radius: 3px;
   font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
@@ -2722,7 +2732,7 @@ color
 }
 .article-entry code {
   color: #999;
-  background: #002b36;
+  background: #f3f4f4;
   padding: 1px 3px;
   border-radius: 5px;
 }
@@ -2803,7 +2813,8 @@ color
   background: #248eb7;
 }
 #article-nav .article-nav-link-wrap:hover .article-nav-title {
-  color: #fff;
+  color: #f69;
+  text-decoration: underline;
 }
 #article-nav #article-nav-older {
   float: right;
@@ -2896,6 +2907,7 @@ color
 }
 .copyright {
   width: 85%;
+  color: #00b749;
   max-width: 45em;
   margin: 0 auto;
   padding: 0.5em 1.8em;
@@ -2915,7 +2927,7 @@ color
 }
 .copyright a:hover {
   font-weight: bold;
-  color: #fff;
+  color: #f69;
 }
 .copyright:hover p .copy-path::after {
   content: "复制";
@@ -3111,14 +3123,15 @@ color
 }
 .archives .archive-article-title {
   font-size: 16px;
-  color: #999;
+  color: #808080;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -ms-transition: color 0.3s;
   transition: color 0.3s;
 }
 .archives .archive-article-title:hover {
-  color: #fff;
+  color: #009fdf;
+  text-decoration: underline;
 }
 .archives .archive-article-title span {
   display: block;
@@ -3200,7 +3213,7 @@ color
 }
 .article-entry pre,
 .article-entry .highlight {
-  background: #002b36;
+  background: #000;
   margin: 10px 0;
   padding: 10px 10px;
   overflow: auto;
@@ -3216,7 +3229,8 @@ color
   font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, monospace;
 }
 .article-entry blockquote {
-  background-color: #555;
+  color: #6a737d;
+  background-color: #fff;
   padding: 10px 15px;
   word-break: break-word;
   margin: 10px 0px;
@@ -3231,7 +3245,7 @@ color
   box-sizing: border-box;
 }
 .article-entry code {
-  background: #002b36;
+  background: #f3f4f4;
   padding: 0 0.3em;
   border: none;
 }
@@ -3254,15 +3268,12 @@ color
   border-radius: 5px;
   font-family: Consolas, "Courier New", Courier;
   text-shadow: none;
-  background-color: #002b36;
+  background-color: #f3f4f4;
   word-wrap: break-word;
   white-space: pre;
 }
 .article-entry p a {
-  border: dashed 1px #000;
-  padding: 8px 8px;
   border-radius: 5px;
-  background-color: #2f2e2e;
   word-wrap: break-word;
   white-space: pre;
   margin: 2px;
@@ -3277,7 +3288,17 @@ color
   font: normal normal normal 14px/1 FontAwesome;
 }
 .article-entry p a:hover {
-  color: #fff;
+  color: #f69;
+}
+.article-entry h1,
+.article-entry h2,
+.article-entry h3,
+.article-entry h4,
+.article-entry h5,
+.article-entry h6 {
+  text-align: left;
+  display: table;
+  font-weight: bold;
 }
 .article-entry h1 {
   font-size: 1.5em;
@@ -3367,15 +3388,16 @@ color
   margin: 0 10px;
 }
 .article-entry li:hover {
-  background-color: #2e2e2e;
+  background-color: #808080;
+  color: #800080;
 }
 .article-entry .highlight::before {
   content: attr(data-lang) " code";
   display: block;
-  background-color: #0083a0;
+  background-color: #fff;
   margin: 0 -10px 16px -10px;
   padding: 8px 16px;
-  color: #efefef;
+  color: #f69;
   font-family: Lato, "Microsoft YaHei", sans-serif;
   font-size: 1.1rem;
   text-shadow: none;
@@ -3435,7 +3457,7 @@ color
   text-shadow: none;
 }
 .article-entry .highlight .line {
-  font-size: 15px;
+  font-size: 14px;
   height: 1.5em;
 }
 .article-entry .gist {
@@ -3443,7 +3465,7 @@ color
   border-style: solid;
   border-color: #ddd;
   border-width: 1px 0;
-  background: #002b36;
+  background: #000;
   padding: 15px 20px 15px 0;
 }
 .article-entry .gist .gist-file {
@@ -3469,7 +3491,7 @@ color
   border: none;
 }
 .article-entry .gist .gist-file .gist-meta {
-  background: #002b36;
+  background: #000;
   color: #75715e;
   font: 0.85em "Lucida Grande", Verdana, "Helvetica Neue", Arial, sans-serif;
   text-shadow: 0 0;
@@ -3557,7 +3579,8 @@ pre .link_url {
   padding: 0 30px;
 }
 #footer a {
-  color: #fff;
+  color: #008000;
+  font-weight: bold;
 }
 #footer a:hover {
   color: #999;
