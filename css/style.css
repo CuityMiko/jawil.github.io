@@ -2196,8 +2196,11 @@ a {
   border: 1px solid #009a61;
 }
 #header .header-nav .social a.JueJin {
-  background: url("../img/segmentfault.png") center no-repeat #009a61;
-  border: 1px solid #009a61;
+  background: url("../img/JueJin.png") center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  border: 1px solid #1296db;
 }
 #header .switch-part {
   width: 100%;
