@@ -2635,6 +2635,14 @@ color
   padding-right: 30px;
   padding-left: 30px;
 }
+.article-entry .tips {
+  text-indent: 2em;
+  color: #27b2ef;
+}
+.article-entry .tips .post-count {
+  color: #f69;
+  font-weight: bold;
+}
 .article-entry p {
   margin-top: 10px;
 }
