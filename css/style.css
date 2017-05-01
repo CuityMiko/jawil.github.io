@@ -3382,10 +3382,19 @@ color
   border: 0;
   margin: 10px 0;
 }
+.article-entry ul {
+  border-radius: 10px;
+}
+.article-entry ul li {
+  color: #9d9085;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 10px;
+}
 .article-entry ul li:before {
   content: "\f05d";
   font: normal normal normal 14px/1 FontAwesome;
   display: inline-block;
+  color: #f69;
   margin: 0 10px;
   line-height: 28px;
 }
@@ -3400,12 +3409,9 @@ color
   line-height: 28px;
 }
 .article-entry ol li {
+  color: #9d9085;
   list-style: decimal;
   margin: 0 10px;
-}
-.article-entry li:hover {
-  background-color: #808080;
-  color: #800080;
 }
 .article-entry .highlight::before {
   content: attr(data-lang) " code";
