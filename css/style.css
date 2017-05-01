@@ -2260,13 +2260,13 @@ a {
   border-bottom: none;
 }
 .scroll a .fa {
-  color: rgba(255,255,255,0.8);
+  color: rgba(238,98,82,0.8);
 }
 .scroll a:hover {
   background: rgba(147,181,224,0.3) !important;
 }
 .scroll a:hover .fa {
-  color: #fff;
+  color: #f69;
 }
 .hide-labels {
   position: fixed;
@@ -2847,13 +2847,17 @@ color
   position: fixed;
   width: 256px;
   left: 0;
-  top: 360px;
+  top: 1em;
   color: #999;
-  bottom: 0.7em;
+  bottom: 1em;
   padding: 10px;
   margin-left: 0em;
   margin: 20px 10px 10px 10px;
-  background: #3f3f3f;
+  background-color: #3f3f3f;
+  background: url("../../background/toc.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   border: 1px solid #080808;
   border-radius: 6px;
   overflow: auto;
@@ -2874,20 +2878,20 @@ color
   line-height: 1.65em;
 }
 #toc a {
-  color: #999;
+  color: #add8e6;
 }
 #toc a:visited {
-  color: #fff;
+  color: #ffc0cb;
 }
 #toc a:hover {
-  color: #fff;
+  color: #f69;
   text-decoration: none;
 }
 #toc li:hover {
   background: none;
 }
 #toc li:hover li:hover {
-  background: rgba(158,188,226,0.21);
+  background: rgba(158,188,226,0.4);
 }
 #toc .toc-title {
   font-weight: bold;
