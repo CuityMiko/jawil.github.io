@@ -4533,7 +4533,8 @@ pre .link_url {
   -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.2), 0 4px 15px rgba(0,0,0,0.2);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2), 0 4px 15px rgba(0,0,0,0.2);
 }
-.page-reward .hide_box {
+.page-reward .hide_box,
+.page-reward .hide_box_index {
   z-index: 999;
   background: #000;
   opacity: 0.5;
@@ -4545,7 +4546,8 @@ pre .link_url {
   position: fixed;
   display: none;
 }
-.page-reward .shang_box {
+.page-reward .shang_box,
+.page-reward .shang_box_index {
   width: 540px;
   height: 450px;
   padding: 10px;
@@ -4560,7 +4562,8 @@ pre .link_url {
   border: 1px dotted #000;
   display: none;
 }
-.page-reward .shang_box img {
+.page-reward .shang_box img,
+.page-reward .shang_box_index img {
   border: none;
   border-width: 0;
 }
@@ -4654,7 +4657,8 @@ pre .link_url {
   height: 36px;
 }
 @media screen and (max-width: 800px) {
-  .page-reward .shang_box {
+  .page-reward .shang_box,
+  .page-reward .shang_box_index {
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
