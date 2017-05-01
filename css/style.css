@@ -2649,8 +2649,8 @@ color
 .article-entry li code {
   padding: 1px 3px;
   margin: 0 3px;
-  color: #999;
-  background: #f3f4f4;
+  color: #f48385;
+  background: rgba(199,38,79,0.07);
   border: 1px dashed #ccc;
   border-radius: 3px;
   font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
@@ -2745,8 +2745,8 @@ color
   background: none;
 }
 .article-entry code {
-  color: #999;
-  background: #f3f4f4;
+  color: #f48385;
+  background: rgba(199,38,79,0.07);
   padding: 1px 3px;
   border-radius: 5px;
 }
@@ -3232,7 +3232,7 @@ color
 }
 .article-entry pre,
 .article-entry .highlight {
-  background: #000;
+  background: #202225;
   margin: 10px 0;
   padding: 10px 10px;
   overflow: auto;
@@ -3264,22 +3264,22 @@ color
   box-sizing: border-box;
 }
 .article-entry code {
-  background: #f3f4f4;
+  background: rgba(199,38,79,0.07);
   padding: 0 0.3em;
   border: none;
 }
 .article-entry pre {
-  color: #fff;
+  color: #c5c8c6;
 }
 .article-entry pre code {
   background: none;
   text-shadow: none;
   padding: 0;
-  color: #fff;
+  color: #c5c8c6;
 }
 .article-entry p code {
   margin: 0 3px;
-  color: #999;
+  color: #f48385;
   padding: 5px 8px;
   font-weight: bold;
   font-size: 90%;
@@ -3289,7 +3289,7 @@ color
   border-radius: 5px;
   font-family: Consolas, "Courier New", Courier;
   text-shadow: none;
-  background-color: #f3f4f4;
+  background-color: rgba(199,38,79,0.07);
   word-wrap: break-word;
 /*white-space: pre*/
 }
@@ -3430,7 +3430,7 @@ color
 .article-entry .highlight {
   border-radius: 4px;
   padding: 0 10px;
-  color: #fff;
+  color: #c5c8c6;
 }
 .article-entry .highlight pre {
   border: none;
@@ -3457,7 +3457,7 @@ color
 }
 .article-entry .highlight figcaption {
   font-size: 0.85em;
-  color: #75715e;
+  color: #969896;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -3488,7 +3488,7 @@ color
   border-style: solid;
   border-color: #ddd;
   border-width: 1px 0;
-  background: #000;
+  background: #202225;
   padding: 15px 20px 15px 0;
 }
 .article-entry .gist .gist-file {
@@ -3514,8 +3514,8 @@ color
   border: none;
 }
 .article-entry .gist .gist-file .gist-meta {
-  background: #000;
-  color: #75715e;
+  background: #202225;
+  color: #969896;
   font: 0.85em "Lucida Grande", Verdana, "Helvetica Neue", Arial, sans-serif;
   text-shadow: 0 0;
   padding: 0;
@@ -3550,10 +3550,10 @@ pre .command {
   color: #258fb8;
 }
 pre .comment {
-  color: #75715e;
+  color: #969896;
 }
 pre .keyword {
-  color: #66d9ef;
+  color: #b294bb;
 }
 pre .function,
 pre .class .params {
@@ -3562,18 +3562,18 @@ pre .class .params {
 pre .params,
 pre .function,
 pre .css .value {
-  color: #fd971f;
+  color: #de935f;
 }
 pre .css ~ * .tag,
 pre .at_rule,
 pre .preprocessor {
-  color: #f92672;
+  color: #f0c674;
 }
 pre .built_in,
 pre .class,
 pre .css ~ * .class,
 pre .function {
-  color: #a6e22e;
+  color: #81a2be;
 }
 pre .value,
 pre .number {
@@ -3581,7 +3581,7 @@ pre .number {
 }
 pre .id,
 pre .css ~ * .id {
-  color: #fd971f;
+  color: #de935f;
 }
 pre .link_label,
 pre .code,
