@@ -53,10 +53,7 @@
     //判断图片是否在规定的可视区内
     const inView = function(element, view) {
         let react = element.getBoundingClientRect()
-        return (
-            react.right >= view.l &&
-            react.bottom >= view.t &&
-            react.left <= view.r="" &&="" react.top="" <="view.b" )="" }="" 图片懒加载lazy类="" class="" lazy="" {="" constructor(opts="{})" this.opts="Object.assign({}," default_options,="" opts)="" this.init()="" 初始化数据和方法="" init()="" let="" offsetall="this.opts.offset," 默认为0="" offsetvertical="this.opts.offsetVertical" ||="" offsetall,="" 距离容器可视区上下的距离="" offsethorizontal="this.opts.offsetHorizontal" 距离容器可视区左右的距离="" offsettop="this.opts.offsetTop" offsetvertical,="" offsetbottom="this.opts.offsetBottom" offsetleft="this.opts.offsetLeft" offsethorizontal,="" offsetright="this.opts.offsetRight" 图片开始加载的范围="" this.opts.offset="{" t:="" offsettop,="" b:="" offsetbottom,="" l:="" offsetleft,="" r:="" 首次渲染="" this.render()="" containerid默认是window全局对象，函数节流="" this.opts.containerid.addeventlistener('scroll',="" throtte(f=""> {
+        return (react.right >= view.l && react.bottom >= view.t && react.left <= view.r="" &&="" react.top="" <="view.b)" }="" 图片懒加载lazy类="" class="" lazy="" {="" constructor(opts="{})" this.opts="Object.assign({}," default_options,="" opts)="" this.init()="" 初始化数据和方法="" init()="" let="" offsetall="this.opts.offset," 默认为0="" offsetvertical="this.opts.offsetVertical" ||="" offsetall,="" 距离容器可视区上下的距离="" offsethorizontal="this.opts.offsetHorizontal" 距离容器可视区左右的距离="" offsettop="this.opts.offsetTop" offsetvertical,="" offsetbottom="this.opts.offsetBottom" offsetleft="this.opts.offsetLeft" offsethorizontal,="" offsetright="this.opts.offsetRight" 图片开始加载的范围="" this.opts.offset="{" t:="" offsettop,="" b:="" offsetbottom,="" l:="" offsetleft,="" r:="" 首次渲染="" this.render()="" containerid默认是window全局对象，函数节流="" this.opts.containerid.addeventlistener('scroll',="" throtte(f=""> {
                 this.render()
             }, 1000), false)
 
